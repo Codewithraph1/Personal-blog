@@ -7,10 +7,10 @@ function sendWelcomeEmail($email, $full_name, $username, $raw_password) {
     try {
         // Server settings
         $mail->isSMTP();
-        $mail->Host = 'mail.raphonyeka.com';
+        $mail->Host = '';
         $mail->SMTPAuth = true; // ✅ Important
-        $mail->Username = 'web@raphonyeka.com';
-        $mail->Password = 'Akpakaraph1.';
+        $mail->Username = '';
+        $mail->Password = '';
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; // ✅ Better than using 'ssl' string
         $mail->Port = 465;
 
